@@ -14,7 +14,7 @@ services:
     image: axeunder/kittygram_backend
     env_file: .env
     volumes:
-      - static_valume_kit:/backend_static
+      - static_volume_kit:/backend_static
   frontend:
     env_file: .env
     image: axeunder/kittygram_frontend
@@ -27,4 +27,4 @@ services:
     ports:
       - 9000:80
     volumes:
-      - static_valume_kit:/staticfiles
+      - static_volume_kit:/staticfiles
