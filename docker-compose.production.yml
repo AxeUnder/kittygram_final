@@ -1,7 +1,7 @@
 version: '3'
 
 volumes:
-  pg_data_produktion_kit:
+  pg_data_production_kit:
   static_volume_kit:
 
 services:
