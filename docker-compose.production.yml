@@ -9,7 +9,7 @@ services:
     image: postgres:13
     env_file: .env
     volumes:
-      - pg_data_production_kit:/var/lib/postgresql/data
+      - pg_data_production_kit:/var/lib/postgresql/data/
   backend:
     image: axeunder/kittygram_backend
     env_file: .env
@@ -27,4 +27,4 @@ services:
     ports:
       - 9000:80
     volumes:
-      - static_volume_kit:/staticfiles
+      - static_volume_kit:/staticfiles/
