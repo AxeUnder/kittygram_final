@@ -20,7 +20,7 @@ services:
     image: axeunder/kittygram_frontend
     command: cp -r /app/build/. /frontend_static/
     volumes:
-      - static_volume_kit:/frontend_static
+      - static_volume_kit:/frontend_static/
   gateway:
     image: axeunder/kittygram_gateway
     env_file: .env
