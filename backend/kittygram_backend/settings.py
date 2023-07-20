@@ -13,7 +13,7 @@ if os.path.isfile(dotenv_file):
 
 SECRET_KEY = os.environ['SECRET_KEY']
 
-if os.environ['DEBUG'.lower()] is 'true':
+if os.environ['DEBUG'.lower()] == 'true':
     DEBUG = True
 else:
     DEBUG = False
