@@ -119,14 +119,12 @@ jobs:
           tags: axeunder/kittygram_gateway:latest
 
   deploy:
-    on:
-      push:
-        branches:
-          - main
-    branches:
-      - main
     runs-on: ubuntu-latest
     needs:
+      on:
+        push:
+          branches:
+            - main
       - build_backend_and_push_to_docker_hub
       - build_frontend_and_push_to_docker_hub
       - build_gateway_and_push_to_docker_hub
