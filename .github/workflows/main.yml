@@ -119,6 +119,10 @@ jobs:
           tags: axeunder/kittygram_gateway:latest
 
   deploy:
+    on:
+      push:
+        branches:
+          - main
     branches:
       - main
     runs-on: ubuntu-latest
