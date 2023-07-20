@@ -16,7 +16,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 if os.environ['DEBUG'].lower() == 'true':
     DEBUG = True
 
-ALLOWED_HOSTS = [os.environ['ALLOWED_HOSTS'].split(',')]
+ALLOWED_HOSTS = os.environ['ALLOWED_HOSTS'].split(',')
 
 INSTALLED_APPS = [
     'django.contrib.admin',
