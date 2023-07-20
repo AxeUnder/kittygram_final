@@ -21,7 +21,7 @@ jobs:
           POSTGRES_PASSWORD: django_password
           POSTGRES_DB: django_db
           SECRET_KEY: ${{ secrets.SECRET_KEY }}
-          DEBUG: False
+          DEBUG: True
           ALLOWED_HOSTS: 127.0.0.1, localhost
         ports:
           - 5432:5432
@@ -46,7 +46,7 @@ jobs:
         DB_HOST: 127.0.0.1
         DB_PORT: 5432
         SECRET_KEY: ${{ secrets.SECRET_KEY }}
-        DEBUG: False
+        DEBUG: True
         ALLOWED_HOSTS: 127.0.0.1, localhost
       run: |
         python -m flake8 backend/
