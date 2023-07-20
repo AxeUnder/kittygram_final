@@ -15,8 +15,6 @@ SECRET_KEY = os.environ['SECRET_KEY']
 
 if os.environ['DEBUG'.lower()] == 'true':
     DEBUG = True
-else:
-    DEBUG = False
 
 ALLOWED_HOSTS = ['ALLOWED_HOSTS'.split(',')]
 
