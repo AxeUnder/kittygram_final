@@ -13,10 +13,10 @@ if os.path.isfile(dotenv_file):
 
 SECRET_KEY = os.environ['SECRET_KEY']
 
-if os.environ['DEBUG'] == 'true'.lower():
+if os.environ['DEBUG'].lower() == 'true':
     DEBUG = True
 
-ALLOWED_HOSTS = ['ALLOWED_HOSTS'.split(',')]
+ALLOWED_HOSTS = os.environ['ALLOWED_HOSTS'].split(',')
 
 INSTALLED_APPS = [
     'django.contrib.admin',
