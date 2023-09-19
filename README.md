@@ -43,4 +43,6 @@ sudo docker-compose up
 
 Просмотр питомца: GET `/cats/{cat_id}`
 
-> Автор проекта junior-разработчик [AxeUnder](https://github.com/AxeUnder)
+## Об авторе
+Python-разработчик
+>[AxeUnder](https://github.com/AxeUnder).
